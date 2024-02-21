@@ -4,16 +4,15 @@ const serviceKey = 'b26f3923-0250-4ed3-8329-54b04f6af8a2';
 
 const fetchData = async () => {
     try {
-        const response = await fetch(`http://api.kcisa.kr/openapi/API_TOU_052/request?serviceKey=${serviceKey}&numOfRows=${numOfRows}&pageNo=${pageNo}`,{
+        await fetch(`http://api.kcisa.kr/openapi/API_TOU_052/request?serviceKey=${serviceKey}&numOfRows=${numOfRows}&pageNo=${pageNo}`,{
             headers: {
             accept: "application/json"
             }
+        })
+        .then((response) => response.json())
+        .then((json) => {
+          console.log(json);
         });
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        const data = await response.json();
-        displayData(data);
     } catch (error) {
         console.error('There was a problem with the fetch operation:', error);
     }
