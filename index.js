@@ -1,14 +1,34 @@
-fetch(
-  "https://apis.data.go.kr/1741000/StanReginCd/getStanReginCdList?serviceKey=ZXfWv8aizBtm6uHE%2Fvofrjzz2FMfm3%2FxOxLeB%2FfInDyPgt%2BEgUWDfh0EfQc%2F%2B15He2qdhbBN9vAEc5vTgtkYLw%3D%3D&pageNo=1&numOfRows=200&type=json&locatadd_nm=%EB%8C%80%EA%B5%AC%EA%B4%91%EC%97%AD%EC%8B%9C"
-)
-  .then((response) => response.json())
-  .then((json) => {
-    console.log(json);
-  });
-fetch(
-  "https://apis.data.go.kr/B190001/cardFranchisesV3/cardV3?serviceKey=ZXfWv8aizBtm6uHE%25252Fvofrjzz2FMfm3%25252FxOxLeB%25252FfInDyPgt%25252BEgUWDfh0EfQc%25252F%25252B15He2qdhbBN9vAEc5vTgtkYLw%25253D%25253D&page=1&perPage=10&cond%5Bemd_cd%3A%3AEQ%5D=27200000&returnType=json"
-)
-  .then((response) => response.json())
-  .then((json) => {
-    console.log(json);
-  });
+let pageNo = 1;
+const numOfRows = 100;
+const serviceKey = 'b26f3923-0250-4ed3-8329-54b04f6af8a2';
+
+const fetchData = async () => {
+    try {
+        const response = await fetch(`http://api.kcisa.kr/openapi/API_TOU_052/request?serviceKey=${serviceKey}&numOfRows=${numOfRows}&pageNo=${pageNo}`,{
+            headers: {
+            accept: "application/json"
+            }
+        });
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        displayData(data);
+    } catch (error) {
+        console.error('There was a problem with the fetch operation:', error);
+    }
+};
+
+const displayData = (data) => {
+    const dataContainer = document.getElementById('data-container');
+    dataContainer.innerHTML = ''; // Clear previous data
+    dataContainer.innerHTML = `<p>페이지: ${pageNo}</p>`;
+};
+const nextPage = () => {
+    pageNo++;
+    fetchData();
+};
+// document.getElementById('next-button').addEventListener('click', nextPage);
+
+// 페이지 로드시 초기 데이터를 가져옵니다.
+fetchData();
