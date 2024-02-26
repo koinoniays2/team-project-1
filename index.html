@@ -3,9 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- jquery -->
     <script src="js/jquery-3.7.1.min.js"></script>
-    <title>Documentd</title>
+
+    <!-- bx slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $(".slider").bxSlider();
+      });
+    </script>
+    
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>세계 미식 반려동물 동반 탐방 가이드
+    </title>
     <script src="js/api.js"></script>
   </head>
-  <body></body>
+  <body>
+    <!-- 헤더 -->
+    <header>
+      <!-- 로고 -->
+      <div><img style="width: 50px; height: 60px;" src="/images/logo.png" alt="logo"></div>
+      <ul id="header_menu">
+        <li>동남아시아</li>
+        <li>동아시아</li>
+        <li>유럽</li>
+        <li>아메리카(남미,북미)</li>
+        <li>기타</li>
+      </ul>
+    </header>
+
+    <main>
+      <!-- bx slider 이미지 -->
+      <div class="slider">
+        <div><img src="https://i.namu.wiki/i/nDdQBd5RiUXUFdFgNFMi1e-Yj5wxDK8faZqz-DVDaJgIj0ZNe-omEo1bhSOqT8svgZkBlWp2ZaOTGL4TsNDJjQ.svg" alt=""></div>
+        <div><img src="https://economychosun.com/site/data/img_dir/2019/06/01/2019060100006_0.jpg" alt=""></div>
+      </div>
+
+      <!-- 첫 번째 section -->
+      <section id="first_section">
+        <h2>Title1</h2>
+        <ul class="first_section_img">
+          <li>이미지</li>
+          <li>이미지</li>
+          <li>이미지</li>
+          <li>이미지</li>
+        </ul>
+    </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+  </body>
 </html>
