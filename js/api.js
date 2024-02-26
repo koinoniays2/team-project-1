@@ -48,7 +48,11 @@ const hotelData = () => {
   fetch("../json/hotel.json")
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
+      let petOk = [];
+      data?.forEach((item) => {
+        item.pet_info_cn?.includes("반려동물 동반 가능") && petOk.push(item);
+      })
+      console.log(petOk);
     })
     .catch((error) => {
       console.error("데이터를 불러오는 도중 에러가 발생했습니다:", error);
