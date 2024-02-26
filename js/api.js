@@ -7,13 +7,23 @@ const fetchData = async () => {
                 accept: "application/json"
             }
         });
-        // console.log(response);
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
         const json = await response.json();
-        let vegan = json?.response?.body?.items?.item?.filter((item) => item?.information?.includes("채식 메뉴 있음"));
-        console.log(vegan);
+        let pet = json?.response?.body?.items?.item?.filter((item) => item?.information?.includes("동반 입장가능"));
+        // console.log(pet);
+        // 동남아시아, 유럽, 인도, 북미남미, 기타
+        let southEastAsia = [], europe = [], eastAsia = [], america = [], etc = [];
+        pet?.forEach((item) => {
+            if (item.category2?.includes("동남아시아")) southEastAsia.push(item);
+            else if (item.category2?.includes("동아시아")) eastAsia.push(item);
+            else if (item.category2?.includes("유럽")) europe.push(item);
+            else if (item.category2?.includes("북미") || item.category2?.includes("남미")) america.push(item);
+            else etc.push(item);
+        });
+        console.log(southEastAsia);
+        console.log(eastAsia);
+        console.log(europe);
+        console.log(america);
+        console.log(etc);
     } catch (error) {
         console.error('There was a problem with the fetch operation:', error);
     }
