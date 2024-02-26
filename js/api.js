@@ -12,6 +12,8 @@ const foodData = async () => {
     );
     const json = await response.json();
     let pet = json?.response?.body?.items?.item?.filter((item) =>
+      // 부산광역시 음식점
+      // item?.address?.includes("부산광역시") &&
       item?.information?.includes("동반 입장가능")
     );
     // console.log(pet);
