@@ -174,23 +174,19 @@ footer p {
   font-size: 5rem;
 }
 
-<<<<<<< HEAD
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
 
   .first_section {
     margin-top: 100px;
   }
   
-=======
-@media screen and (max-width: 1300px) {
->>>>>>> ef5ec42271fb56e37bbc1ec5fcb4260b078b25c5
+@media screen and (max-width: 768px) {
   .first_section_food {
     width: 200px;
     height: 150px;
     font-size: 1.2rem;
   }
-<<<<<<< HEAD
   
   .first_section #first_container{
     max-width: 800px;
@@ -213,6 +209,4 @@ footer p {
     margin-top: 100px;
   }
 }
-=======
 }
->>>>>>> ef5ec42271fb56e37bbc1ec5fcb4260b078b25c5
