@@ -18,29 +18,21 @@ const foodData = async () => {
     );
     // console.log(pet);
     // 동남아시아, 유럽, 인도, 북미남미, 기타
-    let southEastAsia = [],
-      europe = [],
-      eastAsia = [],
-      america = [],
-      etc = [];
+    let southEastAsia = [], europe = [], eastAsia = [], america = [], etc = [];
     pet?.forEach((item) => {
       if (item.category2?.includes("동남아시아")) southEastAsia.push(item);
       else if (item.category2?.includes("동아시아")) eastAsia.push(item);
       else if (item.category2?.includes("유럽")) europe.push(item);
-      else if (
-        item.category2?.includes("북미") ||
-        item.category2?.includes("남미")
-      )
-        america.push(item);
+      else if (item.category2?.includes("북미") || item.category2?.includes("남미")) america.push(item);
       else etc.push(item);
     });
-    console.log(southEastAsia);
-    console.log(eastAsia);
-    console.log(europe);
-    console.log(america);
-    console.log(etc);
+    console.log("동남아시아", southEastAsia);
+    console.log("동아시아", eastAsia);
+    console.log("유럽", europe);
+    console.log("북미", america);
+    console.log("기타", etc);
   } catch (error) {
-    console.error("There was a problem with the fetch operation:", error);
+    console.error("데이터를 불러오는 도중 에러가 발생했습니다:", error);
   }
 };
 foodData();
@@ -51,13 +43,28 @@ const hotelData = () => {
     .then((response) => response.json())
     .then((data) => {
       let petOk = [];
-      data?.forEach((item) => {
-        item.pet_info_cn?.includes("반려동물 동반 가능") && petOk.push(item);
-      })
-      console.log(petOk);
+      data?.forEach((item) => {item.pet_info_cn?.includes("반려동물 동반 가능") && petOk.push(item);})
+      console.log("호텔",petOk);
+
     })
     .catch((error) => {
       console.error("데이터를 불러오는 도중 에러가 발생했습니다:", error);
     });
 };
 hotelData();
+
+// 카페 데이터
+const cafeData = () => {
+  fetch("../json/cafe.json")
+    .then((response) => response.json())
+    .then((data) => {
+      let cafe = [];
+      data?.forEach((item) => {item.CTGRY_THREE_NM?.includes("카페") && cafe.push(item);})
+      console.log("카페",cafe);
+      // console.log(data);
+    })
+    .catch((error) => {
+      console.error("데이터를 불러오는 도중 에러가 발생했습니다:", error);
+    });
+};
+cafeData();
