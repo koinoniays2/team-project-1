@@ -28,6 +28,10 @@ header {
   color: #000;
 }
 
+.mobile_nav {
+  display: none;
+}
+
 .carousel_main {
   /* width: 1900px; 이미지 크기 설정  */
   position: relative;
@@ -49,3 +53,5 @@ header {
   list-style: none;
   transition: transform 1s;
 }
+
+
