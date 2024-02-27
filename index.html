@@ -7,25 +7,131 @@
     <!-- jquery -->
     <script src="js/jquery-3.7.1.min.js"></script>
 
-    <!-- css -->
-    <link rel="stylesheet" href="/css/PcStyle.css">
+    <!-- bx slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
 
-    <title>세계 미식 반려동물 동반 탐방 가이드
-    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!-- bx슬라이더 -->
+    <script>
+      $(document).ready(function () {
+        $(".slider").bxSlider();
+      });
+    </script>
+
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- css -->
+    <!-- 기본설정 css -->
+    <link rel="stylesheet" href="/css/index.css" />
+    <!-- pc css -->
+    <link rel="stylesheet" href="/css/PcStyle.css" />
+    <!-- mo css -->
+    <link rel="stylesheet" href="/css/mstyle.css" />
+    <title>세계 미식 반려동물 동반 탐방 가이드</title>
+
+    <!-- api js -->
     <script src="js/api.js"></script>
   </head>
+
   <body>
     <div id="header_wrapper">
       <!-- 메인이미지  -->
       <header>
-          <div><img style="width: 50px; height: 60px;" src="/images/logo.png" alt="logo"></div>
-          <ul id="header_menu">
-              <li>LOGIN</li>
-              <li>SIGN IN</li>
-              <li>COMMUNITY</li>
-          </ul>
+        <div>
+          <img
+            style="width: 50px; height: 60px"
+            src="/images/logo.png"
+            alt="logo"
+          />
+        </div>
+        <ul id="header_menu">
+          <li>LOGIN</li>
+          <li>SIGN IN</li>
+          <li>COMMUNITY</li>
+        </ul>
       </header>
-  </div>
+    </div>
+    <!-- mo nav bar -->
+    <div class="mo_nav">
+      <!-- 네브바 -->
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="../images/logo.png" width="40px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                DOGETHER
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >동남아시아</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">동아시아</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">유럽</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">아메리카(남미,북미)</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">기타</a>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
 
     <main>
       <!-- 첫 번째 section -->
@@ -38,11 +144,9 @@
           <li>이미지</li>
           <li>이미지</li>
         </ul>
-    </section>
+      </section>
     </main>
 
-    <footer>
-
-    </footer>
+    <footer></footer>
   </body>
 </html>
