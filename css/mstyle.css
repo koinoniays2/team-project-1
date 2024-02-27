@@ -1,7 +1,7 @@
 @media screen and (max-width: 1270px)
 {
 
-/* pc헤더 none */
+/* pc헤더, 메인이미지 none */
 #header_wrapper {
   background-color: transparent;
 }
@@ -14,14 +14,17 @@ header {
 #header_wrapper #header_menu {
   display: none;
 }
+.dogether {
+  font-size: 3rem;
+  text-align: center;
+}
+
 
 
 /* mo헤더 block */
 .mobile_nav {
   display: block;
-  /* width: 100vw; */
 }
-
 
 /* 네브바 */
 .bg-body-tertiary {
