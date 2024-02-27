@@ -1,26 +1,41 @@
-* {
-  margin: 0;
-  padding: 0;
+@media screen and (max-width: 1270px)
+{
+
+/* pc헤더 none */
+#header_wrapper {
+  background-color: transparent;
 }
-
-
-/* 헤더 */
 header {
-  background: url("../images/메인이미지.png") no-repeat;
-  background-size: 100%;
-  width: 100vw;
-  height: 50vh;
+  background-color: transparent;
 }
+#header_wrapper img {
+  display: none;
+}
+#header_wrapper #header_menu {
+  display: none;
+}
+
+
+/* mo헤더 block */
+.mobile_nav {
+  display: block;
+  /* width: 100vw; */
+}
+
 
 /* 네브바 */
 .bg-body-tertiary {
-  background-color: rgba(255, 255, 255, 0.8) !important;
-  --bs-bg-opacity: 0.8 !important;
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  --bs-bg-opacity: 0.7 !important;
 }
 .offcanvas {
-  background-color: rgba(255, 255, 255, 0.8) !important;
+  background-color: rgba(255, 255, 255, 0.7) !important;
 }
 
 .navbar-toggler {
   border: none !important;
+}
+
+/*  */
+
 }
