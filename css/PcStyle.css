@@ -4,33 +4,54 @@
   box-sizing: border-box;
 }
 
-body {
+#header_wrapper {
   background-image: url(/images/메인이미지.png);
+  width: 100%;
+  height: 150vh;
   background-size: cover;
-  height: 100%;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #fff;
+  height: 80px;
+  padding: 0 15px 0 15px;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 #header_menu {
   display: flex;
   list-style: none;
   gap: 50px;
+  color: #000;
 }
 
-#first_section {
+.mobile_nav {
+  display: none;
+}
+
+.carousel_main {
+  /* width: 1900px; 이미지 크기 설정  */
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  user-select: none;
+}
+
+.carousel_main {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.first_section_img {
+.carousel_wrapper {
   display: flex;
   justify-content: space-around;
   align-items: center;
   list-style: none;
+  transition: transform 1s;
 }
+
+
