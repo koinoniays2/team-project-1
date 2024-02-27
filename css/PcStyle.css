@@ -29,6 +29,14 @@ header {
 }
 
 .carousel_main {
+  /* width: 1900px; 이미지 크기 설정  */
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  user-select: none;
+}
+
+.carousel_main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,4 +47,5 @@ header {
   justify-content: space-around;
   align-items: center;
   list-style: none;
+  transition: transform 1s;
 }
