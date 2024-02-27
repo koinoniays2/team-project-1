@@ -16,7 +16,14 @@
     <!-- bx슬라이더 -->
     <script>
       $(document).ready(function () {
-        $(".slider").bxSlider();
+        $(".bxslider").bxSlider({
+          minSlides: 4,
+          maxSlides: 4,
+          slideWidth: 170,
+          slideMargin: 10,
+          ticker: true,
+          speed: 9000,
+        });
       });
     </script>
     <!-- bootstrap -->
@@ -66,14 +73,14 @@
     <div id="main-image">
       <p class="dogether">with DOGETHER</p>
     </div>
-    
+
     <!-- mo nav bar -->
     <div class="mobile_nav">
       <!-- 네브바 -->
       <nav class="navbar bg-body-tertiary fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="../images/logo.png" width="40px"/>
+            <img src="../images/logo.png" width="40px" />
           </a>
           <button
             class="navbar-toggler"
@@ -143,34 +150,33 @@
     <main>
       <!-- 첫 번째 section -->
       <section class="first_section">
-        <h2><img src="/images/fistTitle.png" alt="Title" /></h2>
-        <!-- 음식 이미지 -->
-        <ul class="first_section_wrapper">
-          <li class="first_section_food">
+        <img src="/images/fistTitle.png" alt="Title" />
+        <ul class="bxslider">
+          <li>
             <a href="detail.html?dataId=동남아시아">
               <img src="./images/밥.png" />
               <p class="img_text">동남아시아</p>
             </a>
           </li>
-          <li class="first_section_food">
+          <li>
             <a href="detail.html?dataId=동아시아">
               <img src="./images/짬뽕.png" alt="동아시아" />
               <p class="img_text">동아시아</p>
             </a>
           </li>
-          <li class="first_section_food">
+          <li>
             <a href="detail.html?dataId=유럽">
               <img src="./images/치킨.png" alt="유럽" />
               <p class="img_text">유럽</p>
             </a>
           </li>
-          <li class="first_section_food">
+          <li>
             <a href="detail.html?dataId=아메리카">
               <img src="./images/햄버거.png" alt="아메리카" />
               <p class="img_text">아메리카(남미, 북미)</p>
             </a>
           </li>
-          <li class="first_section_food">
+          <li>
             <a href="detail.html?dataId=기타">
               <img src="./images/기타.png" alt="기타" />
               <p class="img_text">기타</p>
