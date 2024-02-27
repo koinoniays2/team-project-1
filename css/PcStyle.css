@@ -1,8 +1,8 @@
 body {
   overflow-x: hidden;
-  font-family: "NotoSansKR-Regular";
 }
 
+/* ---------헤더 ----------  */
 header {
   position: fixed;
   width: 100%;
@@ -21,7 +21,7 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-/* 메인 이미지 */
+/* ----------메인 이미지 */
 #main-image {
   position: relative;
   background: url("/images/mainbg.png");
@@ -63,65 +63,87 @@ header {
   display: none;
 }
 
+
+/* ----------section 1 */
 .first_section {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   margin-top: 150px;
-}
-
-.first_section #first_container{
-  width: 100%;
-  max-width: 1280px;
-}
-
-.first_section_wrapper {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-  gap: 25px;
-  margin-top: 5px;
-}
-
-.first_section h2 {
-  margin-left: 15px;
-}
-
-.first_section_food {
-  display: flex;
-  justify-content: space-around;
-  width: 20%;
-  height: 250px;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.first_section_food img {
-  border-radius: 10px;
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .img_text {
   padding: 10px;
 }
 
-.second_section {
-  margin-top: 150px;
+.first_section, .second_section, .third_section {
+  margin: 6em 0;
 }
 
-.second_container {
+.sub-title-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.5em;
+  margin-bottom: 1.5em;
+  margin-left: 3rem;
+}
+.sub-title-t {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: bold;
+}
+
+.sub-title-t p {
+  margin: 0 1em;
+}
+
+.first_section > img {
+  width: 200px;
+}
+
+/* section1 > swiper */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-pagination {
+  margin: -10px 0;
+}
+
+
+/* ----------section 2 */
+
+.second_section {
+  margin-top: 150px;
   width: 100%;
   max-width: 1280px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.second_container {
+  
 }
 
 .second_section h2 {
@@ -141,6 +163,9 @@ header {
   margin-top: 10px;
 }
 
+
+
+/* ----------section 3 */
 .third_section {
   margin-top: 150px;
 }

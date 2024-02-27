@@ -1,49 +1,119 @@
-@media screen and (max-width: 768px)
-{
+@media screen and (max-width: 768px) {
+  /* ----------header---------- */
+  #header-container {
+    background-color: transparent;
+  }
+  header {
+    background-color: transparent;
+  }
+  header img {
+    display: none;
+  }
+  header #header_menu {
+    display: none;
+  }
+  .dogether {
+    font-size: 3em;
+    text-align: center;
+  }
 
-/* pc헤더, 메인이미지 none */
-#header-container {
-  background-color: transparent;
-}
-header {
-  background-color: transparent;
-}
-header img {
-  display: none;
-}
-header #header_menu {
-  display: none;
-}
-.dogether {
-  font-size: 3rem;
-  text-align: center;
-}
+  /* header > mobile_nav */
+  .mobile_nav {
+    display: block;
+  }
+  /* bootstrap nav */
+  .bg-body-tertiary {
+    background-color: rgba(255, 255, 255, 0.7) !important;
+    --bs-bg-opacity: 0.7 !important;
+  }
+  .offcanvas {
+    background-color: rgba(255, 255, 255, 0.7) !important;
+  }
+
+  .navbar-toggler {
+    border: none !important;
+  }
+
+  /* ----------메인컨텐츠---------- */
+  content {
+    box-sizing: border-box;
+  }
+
+  /* ----------section 1 */
+  .first_section, .second_section, .third_section {
+    margin: 4.5em 1em;
+  }
+
+  .sub-title-box {
+    width: 100vw;
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: center;
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+  }
+  .sub-title-t {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: bold;
+  }
+
+  .sub-title-t p {
+    margin: 0 1em;
+  }
+
+  .first_section > img {
+    width: 200px;
+  }
+
+  /* section1 > swiper */
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper-pagination {
+    margin: -10px 0;
+  }
+
+  /* ----------section 2 */
+  
+  .sub-conbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sub-conbox img {
+    width: 100%;
+  }
 
 
-/* mo헤더 block */
-.mobile_nav {
-  display: block;
-}
-
-/* 네브바 */
-.bg-body-tertiary {
-  background-color: rgba(255, 255, 255, 0.7) !important;
-  --bs-bg-opacity: 0.7 !important;
-}
-.offcanvas {
-  background-color: rgba(255, 255, 255, 0.7) !important;
-}
-
-.navbar-toggler {
-  border: none !important;
-}
-
-/* 메인컨텐츠 */
-/* section */
-.first_section>img {
-  width: 200px;
-}
-
-/* section 2 */
-
+  /* ----------section 3 */
+  
+ 
+  /* footer */
+  footer {
+    margin: 0 auto;
+  }
+  footer p {
+    font-size: 0.8em;
+    text-align: center;
+  }
 }
