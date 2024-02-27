@@ -4,18 +4,22 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url(/images/메인이미지.png);
+  background-size: cover;
+  height: 100%;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-
 }
 
 #header_menu {
   display: flex;
   list-style: none;
-  gap: 10px;
+  gap: 50px;
 }
 
 #first_section {
