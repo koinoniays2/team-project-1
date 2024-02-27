@@ -1,16 +1,22 @@
 body {
   overflow-x: hidden;
-  font-family:'NotoSansKR-Regular';
+  font-family: "NotoSansKR-Regular";
 }
 
 header {
-  position: fixed; width: 100%;
+  position: fixed;
+  width: 100%;
   background-color: rgba(255, 255, 255, 0.8);
   z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .header-container {
-  display: flex;  width: 100%;
-  max-width: 1280px; margin: 0 auto;
+  display: flex;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
   padding: 1rem 0;
   justify-content: space-between;
   align-items: center;
@@ -27,19 +33,21 @@ header {
 }
 #main-image::after {
   content: "";
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  left: 0; top: 0;
+  left: 0;
+  top: 0;
   background-color: #00000020;
 }
 .dogether {
   position: absolute;
   color: white;
-  z-index: 9;
-  bottom: 1rem;
-  left: 2rem;
+  z-index: 90;
+  bottom: 0;
+  left: 1rem;
   font-size: 5rem;
-  font-family:'DNFBitBitv2';
+  font-family: "DNFBitBitv2";
 }
 
 #header_menu {
@@ -47,6 +55,8 @@ header {
   list-style: none;
   gap: 50px;
   color: #000;
+  align-items: center;
+  margin-bottom: 0;
 }
 
 .mobile_nav {
@@ -164,6 +174,7 @@ footer p {
   font-size: 5rem;
 }
 
+<<<<<<< HEAD
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
 
@@ -171,11 +182,15 @@ footer p {
     margin-top: 100px;
   }
   
+=======
+@media screen and (max-width: 1300px) {
+>>>>>>> ef5ec42271fb56e37bbc1ec5fcb4260b078b25c5
   .first_section_food {
     width: 200px;
     height: 150px;
     font-size: 1.2rem;
   }
+<<<<<<< HEAD
   
   .first_section #first_container{
     max-width: 800px;
@@ -198,3 +213,6 @@ footer p {
     margin-top: 100px;
   }
 }
+=======
+}
+>>>>>>> ef5ec42271fb56e37bbc1ec5fcb4260b078b25c5

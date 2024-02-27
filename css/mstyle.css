@@ -1,27 +1,29 @@
-@media screen and (max-width: 1270px)
+@media screen and (max-width: 1280px)
 {
 
-/* pc헤더 none */
-#header_wrapper {
+/* pc헤더, 메인이미지 none */
+#header-container {
   background-color: transparent;
 }
 header {
   background-color: transparent;
 }
-#header_wrapper img {
+header img {
   display: none;
 }
-#header_wrapper #header_menu {
+header #header_menu {
   display: none;
+}
+.dogether {
+  font-size: 3rem;
+  text-align: center;
 }
 
 
 /* mo헤더 block */
 .mobile_nav {
   display: block;
-  /* width: 100vw; */
 }
-
 
 /* 네브바 */
 .bg-body-tertiary {
@@ -36,6 +38,13 @@ header {
   border: none !important;
 }
 
-/*  */
+/* 메인컨텐츠 */
+/* 첫번재 section */
+.first_section>img {
+  width: 200px;
+}
+
+/* section 2 */
+
 
 }
