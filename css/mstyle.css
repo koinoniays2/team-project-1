@@ -2,16 +2,16 @@
 {
 
 /* pc헤더, 메인이미지 none */
-#header_wrapper {
+#header-container {
   background-color: transparent;
 }
 header {
   background-color: transparent;
 }
-#header_wrapper img {
+header img {
   display: none;
 }
-#header_wrapper #header_menu {
+header #header_menu {
   display: none;
 }
 .dogether {
@@ -20,7 +20,6 @@ header {
 }
 
 
-df
 /* mo헤더 block */
 .mobile_nav {
   display: block;
@@ -39,6 +38,13 @@ df
   border: none !important;
 }
 
-/*  */
+/* 메인컨텐츠 */
+/* 첫번재 section */
+.first_section>img {
+  width: 200px;
+}
+
+/* section 2 */
+
 
 }
