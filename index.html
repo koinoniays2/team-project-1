@@ -38,9 +38,6 @@
     <!-- mo css -->
     <!-- <link rel="stylesheet" href="/css/mstyle.css" /> -->
     <title>세계 미식 반려동물 동반 탐방 가이드</title>
-
-    <!-- api js -->
-    <script src="js/api.js"></script>
   </head>
 
   <body>
@@ -141,22 +138,35 @@
         <!-- 캐러샐 이미지 -->
         <ul class="carousel_wrapper">
           <li class="carousel_slide">
-            <a id="southEastAsia" href="detail.html"><img src="./images/동남아시아.jpg" alt="" /></a>
+            <a href="detail.html?dataId=동남아시아">
+              <img src="./images/동남아시아.jpg" alt="" />
+            </a>
           </li>
           <li class="carousel_slide">
-            <img src="./images/맛없어보이는 샐러드.png" alt="2" />
+            <a href="detail.html?dataId=동아시아">
+              <img src="./images/맛없어보이는 샐러드.png" alt="2" />
+            </a>
           </li>
           <li class="carousel_slide">
-            <img src="./images/씨리얼.png" alt="3" />
+            <a href="detail.html?dataId=유럽">
+              <img src="./images/씨리얼.png" alt="3" />
+            </a>
           </li>
           <li class="carousel_slide">
-            <img src="./images/치킨.png" alt="4" />
+            <a href="detail.html?dataId=아메리카">
+              <img src="./images/치킨.png" alt="4" />
+            </a>
           </li>
           <li class="carousel_slide">
-            <img src="./images/짬뽕.png" alt="4" />
+            <a href="detail.html?dataId=기타">
+              <img src="./images/짬뽕.png" alt="4" />
+            </a>
           </li>
         </ul>
         
     <footer></footer>
+    
+    <!-- api js -->
+    <script src="js/api.js"></script>
   </body>
 </html>
