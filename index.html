@@ -6,67 +6,75 @@
 
     <!-- jquery -->
     <script src="js/jquery-3.7.1.min.js"></script>
-
     <!-- bx slider -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
     />
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-
     <!-- bx슬라이더 -->
     <script>
       $(document).ready(function () {
         $(".slider").bxSlider();
       });
     </script>
-
     <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-
     <!-- css -->
     <!-- 기본설정 css -->
     <link rel="stylesheet" href="/css/index.css" />
     <!-- pc css -->
     <link rel="stylesheet" href="/css/PcStyle.css" />
     <!-- mo css -->
-    <!-- <link rel="stylesheet" href="/css/mstyle.css" /> -->
+    <link rel="stylesheet" href="/css/mstyle.css" />
+
     <title>세계 미식 반려동물 동반 탐방 가이드</title>
   </head>
 
   <body>
-    <div id="header_wrapper">
-      <!-- 메인이미지  -->
-      <header>
+    <!-- 헤더 -->
+    <header>
+      <div class="header-container">
         <div>
-          <img
-            style="width: 50px; height: 60px"
-            src="/images/logo.png"
-            alt="logo"
-          />
+          <a class="navbar-brand" href="#">
+            <img
+              style="width: 50px; height: 60px"
+              src="/images/logo.png"
+              alt="logo"
+            />
+          </a>
         </div>
         <ul id="header_menu">
           <li>LOGIN</li>
           <li>SIGN IN</li>
           <li>COMMUNITY</li>
         </ul>
-      </header>
+      </div>
+    </header>
+    <!-- 메인이미지  -->
+    <div id="main-image">
       <p class="dogether">with DOGETHER</p>
     </div>
+    
     <!-- mo nav bar -->
     <div class="mobile_nav">
       <!-- 네브바 -->
       <nav class="navbar bg-body-tertiary fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"
-            ><img src="../images/logo.png" width="40px"
-          /></a>
+          <a class="navbar-brand" href="#">
+            <img src="../images/logo.png" width="40px"/>
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -135,51 +143,56 @@
     <main>
       <!-- 첫 번째 section -->
       <section class="first_section">
-        <h2><img src="/images/fistTitle.png" alt="Title"></h2>
+        <h2><img src="/images/fistTitle.png" alt="Title" /></h2>
         <!-- 음식 이미지 -->
         <ul class="first_section_wrapper">
           <li class="first_section_food">
             <a href="detail.html?dataId=동남아시아">
-              <img src="./images/밥.png" /><p class="img_text">동남아시아</p>
+              <img src="./images/밥.png" />
+              <p class="img_text">동남아시아</p>
             </a>
           </li>
           <li class="first_section_food">
             <a href="detail.html?dataId=동아시아">
-              <img src="./images/짬뽕.png" alt="동아시아" /><p class="img_text">동아시아</p>
+              <img src="./images/짬뽕.png" alt="동아시아" />
+              <p class="img_text">동아시아</p>
             </a>
           </li>
           <li class="first_section_food">
             <a href="detail.html?dataId=유럽">
-              <img src="./images/치킨.png" alt="유럽" /><p class="img_text">유럽</p>
+              <img src="./images/치킨.png" alt="유럽" />
+              <p class="img_text">유럽</p>
             </a>
           </li>
           <li class="first_section_food">
             <a href="detail.html?dataId=아메리카">
-              <img src="./images/햄버거.png" alt="아메리카" /><p class="img_text">아메리카(남미, 북미)</p>
+              <img src="./images/햄버거.png" alt="아메리카" />
+              <p class="img_text">아메리카(남미, 북미)</p>
             </a>
           </li>
           <li class="first_section_food">
             <a href="detail.html?dataId=기타">
-              <img src="./images/기타.png" alt="기타" /><p class="img_text">기타</p>
+              <img src="./images/기타.png" alt="기타" />
+              <p class="img_text">기타</p>
             </a>
           </li>
         </ul>
       </section>
 
       <section class="second_section">
-        <h2><img src="/images/secondTitle.png" alt="Title"></h2>
-        <div><img src="/images/secondImg.png" alt=""></div>
+        <h2><img src="/images/secondTitle.png" alt="Title" /></h2>
+        <div><img src="/images/secondImg.png" alt="" /></div>
       </section>
 
       <section class="third_section">
-        <h2><img src="/images/thirdTitle.png" alt="Title"></h2>
-        <div><img src="/images/thirdImg.png" alt=""></div>
+        <h2><img src="/images/thirdTitle.png" alt="Title" /></h2>
+        <div><img src="/images/thirdImg.png" alt="" /></div>
       </section>
     </main>
 
     <footer>
       <hr />
-      <p>@2024 by DOGETHER</p>      
+      <p>@2024 by DOGETHER</p>
     </footer>
   </body>
 </html>
