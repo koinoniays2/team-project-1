@@ -53,7 +53,6 @@ header {
 .first_section {
   display: flex;
   flex-direction: column;
-  margin: 0 24px;
   margin-top: 150px;
 }
 
@@ -62,18 +61,16 @@ header {
   justify-content: space-around;
   align-items: center;
   list-style: none;
-  transition: transform 1s;
   gap: 25px;
 }
 
 .first_section_food {
   flex: 0 0 350px; /* 이미지 크기 설정  */
-  position: relative;
+  width: 20%;
   box-shadow: 5px 5px 5px 5px gray;
   font-size: 1.5rem;
   text-align: center;
   border-radius: 10px;
-  overflow: hidden;
 }
 
 .first_section_food img {
