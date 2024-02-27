@@ -31,6 +31,14 @@ const foodData = async () => {
     console.log("유럽", europe);
     console.log("북미", america);
     console.log("기타", etc);
+    const content = document.querySelector(".content");
+
+    southEastAsia?.forEach((item) => {
+      let category = document.createElement('p');
+      category.textContent = item.title;
+      content.appendChild(category);
+    })
+
   } catch (error) {
     console.error("데이터를 불러오는 도중 에러가 발생했습니다:", error);
   }
