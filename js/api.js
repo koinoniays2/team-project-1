@@ -49,36 +49,81 @@ document.addEventListener("DOMContentLoaded", function () {
         case "동남아시아":
           southEastAsia?.forEach((item) => {
             let category = document.createElement("p");
+            let address = document.createElement("div");
+            let tel = document.createElement("div");
+            let date = document.createElement("div");
             category.textContent = item.title;
+            address.textContent = `주소 : ${item.address}`;
+            address.textContent = `전화번호 : ${item.tel}`;
+            date.textContent = item.information;
             content.appendChild(category);
+            content.appendChild(address);
+            content.appendChild(tel);
+            content.appendChild(date);
           });
           break;
         case "동아시아":
           eastAsia?.forEach((item) => {
             let category = document.createElement("p");
+            let address = document.createElement("div");
+            let tel = document.createElement("div");
+            let date = document.createElement("div");
             category.textContent = item.title;
+            address.textContent = `주소 : ${item.address}`;
+            address.textContent = `전화번호 : ${item.tel}`;
+            date.textContent = item.information;
             content.appendChild(category);
+            content.appendChild(address);
+            content.appendChild(tel);
+            content.appendChild(date);
           });
           break;
         case "유럽":
           europe?.forEach((item) => {
             let category = document.createElement("p");
+            let address = document.createElement("div");
+            let tel = document.createElement("div");
+            let date = document.createElement("div");
             category.textContent = item.title;
+            address.textContent = `주소 : ${item.address}`;
+            address.textContent = `전화번호 : ${item.tel}`;
+            date.textContent = item.information;
             content.appendChild(category);
+            content.appendChild(address);
+            content.appendChild(tel);
+            content.appendChild(date);
           });
           break;
         case "아메리카":
           america?.forEach((item) => {
             let category = document.createElement("p");
+            let address = document.createElement("div");
+            let tel = document.createElement("div");
+            let date = document.createElement("div");
             category.textContent = item.title;
+            address.textContent = `주소 : ${item.address}`;
+            address.textContent = `전화번호 : ${item.tel}`;
+            date.textContent = item.information;
             content.appendChild(category);
+            content.appendChild(address);
+            content.appendChild(tel);
+            content.appendChild(date);
           });
           break;
         case "기타":
           etc?.forEach((item) => {
             let category = document.createElement("p");
+            let address = document.createElement("div");
+            let tel = document.createElement("div");
+            let date = document.createElement("div");
             category.textContent = item.title;
+            address.textContent = `주소 : ${item.address}`;
+            address.textContent = `전화번호 : ${item.tel}`;
+            date.textContent = item.information;
             content.appendChild(category);
+            content.appendChild(address);
+            content.appendChild(tel);
+            content.appendChild(date);
           });
           break;
         default:
