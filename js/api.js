@@ -45,85 +45,135 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log("기타", etc);
 
       const content = document.querySelector(".content");
+      const contenttitle = document.querySelector(".title");
+      let title;
       switch (clickedDataId) {
         case "동남아시아":
+          title = document.createElement("h1");
+          title.textContent = "동남아시아";
+          contenttitle.appendChild(title);
           southEastAsia?.forEach((item) => {
-            let category = document.createElement("p");
-            let address = document.createElement("div");
-            let tel = document.createElement("div");
-            let date = document.createElement("div");
+            let wrapperDiv = document.createElement("div");
+            let category = document.createElement("h1");
+            let address = document.createElement("p");
+            let tel = document.createElement("p");
+            let date = document.createElement("p");
+            let sales = document.createElement("p");
+            wrapperDiv.classList.add("detailList");
             category.textContent = item.title;
-            address.textContent = `주소 : ${item.address}`;
-            address.textContent = `전화번호 : ${item.tel}`;
-            date.textContent = item.information;
-            content.appendChild(category);
-            content.appendChild(address);
-            content.appendChild(tel);
-            content.appendChild(date);
+            address.textContent = `주소: ${item.address}`;
+            tel.textContent = `전화번호: ${item.tel}`;
+            sales.textContent = `영업시간: ${item.operatingTime.replace(
+              /-/g,
+              "~"
+            )}`;
+            date.innerText = item.information.replace(/\|/g, "/");
+            wrapperDiv.appendChild(category);
+            wrapperDiv.appendChild(address);
+            wrapperDiv.appendChild(tel);
+            wrapperDiv.appendChild(sales);
+            wrapperDiv.appendChild(date);
+            content.appendChild(wrapperDiv);
           });
           break;
         case "동아시아":
+          title = document.createElement("h1");
+          title.textContent = "동아시아";
+          contenttitle.appendChild(title);
           eastAsia?.forEach((item) => {
-            let category = document.createElement("p");
-            let address = document.createElement("div");
-            let tel = document.createElement("div");
-            let date = document.createElement("div");
+            let wrapperDiv = document.createElement("div");
+            let category = document.createElement("h1");
+            let address = document.createElement("p");
+            let tel = document.createElement("p");
+            let date = document.createElement("p");
+            let sales = document.createElement("p");
+            wrapperDiv.classList.add("detailList");
             category.textContent = item.title;
-            address.textContent = `주소 : ${item.address}`;
-            address.textContent = `전화번호 : ${item.tel}`;
-            date.textContent = item.information;
-            content.appendChild(category);
-            content.appendChild(address);
-            content.appendChild(tel);
-            content.appendChild(date);
+            address.textContent = `주소: ${item.address}`;
+            tel.textContent = `전화번호: ${item.tel}`;
+            sales.textContent = `영업시간: ${item.operatingTime.replace(
+              /-/g,
+              "~"
+            )}`;
+            date.innerText = item.information.replace(/\|/g, "/");
+            wrapperDiv.appendChild(category);
+            wrapperDiv.appendChild(address);
+            wrapperDiv.appendChild(tel);
+            wrapperDiv.appendChild(sales);
+            wrapperDiv.appendChild(date);
+            content.appendChild(wrapperDiv);
           });
           break;
         case "유럽":
+          title = document.createElement("h1");
+          title.textContent = "유럽";
+          contenttitle.appendChild(title);
           europe?.forEach((item) => {
-            let category = document.createElement("p");
-            let address = document.createElement("div");
-            let tel = document.createElement("div");
-            let date = document.createElement("div");
+            let wrapperDiv = document.createElement("div");
+            let category = document.createElement("h1");
+            let address = document.createElement("p");
+            let tel = document.createElement("p");
+            let date = document.createElement("p");
+            let sales = document.createElement("p");
+            wrapperDiv.classList.add("detailList");
             category.textContent = item.title;
-            address.textContent = `주소 : ${item.address}`;
-            address.textContent = `전화번호 : ${item.tel}`;
-            date.textContent = item.information;
-            content.appendChild(category);
-            content.appendChild(address);
-            content.appendChild(tel);
-            content.appendChild(date);
+            address.textContent = `주소: ${item.address}`;
+            tel.textContent = `전화번호: ${item.tel}`;
+            sales.textContent = `영업시간: ${item.operatingTime.replace(
+              /-/g,
+              "~"
+            )}`;
+            date.innerText = item.information.replace(/\|/g, "/");
+            wrapperDiv.appendChild(category);
+            wrapperDiv.appendChild(address);
+            wrapperDiv.appendChild(tel);
+            wrapperDiv.appendChild(sales);
+            wrapperDiv.appendChild(date);
+            content.appendChild(wrapperDiv);
           });
           break;
         case "아메리카":
+          title = document.createElement("h1");
+          title.textContent = "아메리카";
+          contenttitle.appendChild(title);
           america?.forEach((item) => {
-            let category = document.createElement("p");
+            let wrapperDiv = document.createElement("div");
+            let category = document.createElement("h1");
             let address = document.createElement("div");
             let tel = document.createElement("div");
             let date = document.createElement("div");
+            wrapperDiv.classList.add("detailList");
             category.textContent = item.title;
             address.textContent = `주소 : ${item.address}`;
-            address.textContent = `전화번호 : ${item.tel}`;
+            tel.textContent = `전화번호 : ${item.tel}`;
             date.textContent = item.information;
-            content.appendChild(category);
-            content.appendChild(address);
-            content.appendChild(tel);
-            content.appendChild(date);
+            wrapperDiv.appendChild(category);
+            wrapperDiv.appendChild(address);
+            wrapperDiv.appendChild(tel);
+            wrapperDiv.appendChild(date);
+            content.appendChild(wrapperDiv);
           });
           break;
         case "기타":
+          title = document.createElement("h1");
+          title.textContent = "인도, 아프리카, 오세아니아..";
+          contenttitle.appendChild(title);
           etc?.forEach((item) => {
-            let category = document.createElement("p");
+            let wrapperDiv = document.createElement("div");
+            let category = document.createElement("h1");
             let address = document.createElement("div");
             let tel = document.createElement("div");
             let date = document.createElement("div");
+            wrapperDiv.classList.add("detailList");
             category.textContent = item.title;
             address.textContent = `주소 : ${item.address}`;
-            address.textContent = `전화번호 : ${item.tel}`;
+            tel.textContent = `전화번호 : ${item.tel}`;
             date.textContent = item.information;
-            content.appendChild(category);
-            content.appendChild(address);
-            content.appendChild(tel);
-            content.appendChild(date);
+            wrapperDiv.appendChild(category);
+            wrapperDiv.appendChild(address);
+            wrapperDiv.appendChild(tel);
+            wrapperDiv.appendChild(date);
+            content.appendChild(wrapperDiv);
           });
           break;
         default:
@@ -148,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("호텔", petOk);
         // 호텔 디테일
         const content = document.querySelector(".content");
-        if(clickedDataId === "호텔") {
+        if (clickedDataId === "호텔") {
           petOk?.forEach((item) => {
             let name = document.createElement("p");
             let address = document.createElement("p");
