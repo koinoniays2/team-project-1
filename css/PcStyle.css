@@ -147,6 +147,7 @@ header {
   width: 100%;
   max-width: 1280px;
   display: flex;
+  justify-content: start;
 }
 
 .second_section h2 {
@@ -166,22 +167,22 @@ header {
 /* ----------section 3 */
 .third_section {
   margin-top: 150px;
-}
-
-.third_section h2 {
-  margin-left: 30px;
-}
-
-.third_section div {
   display: flex;
   justify-content: center;
 }
 
+.third_container {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  justify-content: end;
+
+
+}
+
 .third_section div img {
-  width: 97.2%;
   border-radius: 1%;
-  box-shadow: 5px 5px 5px 5px gray;
-  margin-top: 10px;
+  width: 100%;
 }
 
 footer {
@@ -196,7 +197,10 @@ footer p {
   text-align: center;
   font-size: 5rem;
 }
-
+.sub-conbox1{
+  width: 640px;
+  height: 360px;
+}
 
 /* 헤더 */
 @media screen and (min-width: 769px) and (max-width: 1279px) {
