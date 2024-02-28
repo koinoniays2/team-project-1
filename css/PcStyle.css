@@ -24,7 +24,7 @@ header {
 /* ----------메인 이미지 */
 #main-image {
   position: relative;
-  background: url("/images/mainbg.png");
+  background: url("../images/mainbg.png");
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -261,6 +261,7 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
+
     width: 1200px;
     max-width: 800px;
   }

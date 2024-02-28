@@ -42,7 +42,7 @@
   /* ----------section 1 */
 
   .sub-title-box {
-    width: 100vw;
+    width: 100%;
     display: flex !important;
     justify-content: flex-start !important;
     align-items: center;
