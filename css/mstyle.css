@@ -40,9 +40,9 @@
   }
 
   /* ----------section 1 */
-  .first_section, .second_section, .third_section {
+  /* .first_section, .second_section, .third_section {
     margin: 4.5em 1em;
-  }
+  } */
 
   .sub-title-box {
     width: 100vw;
@@ -100,8 +100,11 @@
     justify-content: center;
     align-items: center;
   }
-  .sub-conbox img {
-    width: 100%;
+  .sub-con-img {
+    width: 100vw;
+  }
+  .sub-con-img img {
+    width: 100vw;
   }
 
 
