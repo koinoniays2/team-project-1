@@ -125,8 +125,8 @@
   width: 100%;
   max-width: 580px;
 }
-.second-title-box,
-.sub-title-box {
+
+.second-title-box {
   font-size: 1.5rem;
   font-weight: bold;
 }
