@@ -94,20 +94,12 @@
     flex-direction: column-reverse;
   }
 
-
-
-
   /* ----------section 3 */
-.third_section {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-
-
-
-
+  .third_section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 
   /* footer */
   footer {
@@ -133,7 +125,8 @@
   width: 100%;
   max-width: 580px;
 }
-.second-title-box, .sub-title-box {
+.second-title-box,
+.sub-title-box {
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -144,6 +137,4 @@
   transform: rotate(-30deg);
 }
 
-
 /* -------------pc section 3----------- */
-

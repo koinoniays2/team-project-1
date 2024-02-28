@@ -198,17 +198,24 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("호텔", petOk);
         // 호텔 디테일
         const content = document.querySelector(".content");
+        const contenttitle = document.querySelector(".title");
         if (clickedDataId === "호텔") {
+          title = document.createElement("h1");
+          title.textContent = "호텔";
+          contenttitle.appendChild(title);
           petOk?.forEach((item) => {
-            let name = document.createElement("p");
+            let wrapperDiv = document.createElement("div");
+            let name = document.createElement("h1");
             let address = document.createElement("p");
             let date = document.createElement("p");
+            wrapperDiv.classList.add("detailList");
             name.textContent = item.ldgs_nm;
             address.textContent = `주소 : ${item.ldgs_addr}`;
             date.textContent = item.pet_info_cn;
-            content.appendChild(name);
-            content.appendChild(address);
-            content.appendChild(date);
+            wrapperDiv.appendChild(name);
+            wrapperDiv.appendChild(address);
+            wrapperDiv.appendChild(date);
+            content.appendChild(wrapperDiv);
           });
         }
       })
@@ -229,6 +236,38 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         console.log("카페", cafe);
         // console.log(data);
+        const content = document.querySelector(".content");
+        const contenttitle = document.querySelector(".title");
+        if (clickedDataId === "카페") {
+          title = document.createElement("h1");
+          title.textContent = "카페";
+          contenttitle.appendChild(title);
+          cafe?.forEach((item) => {
+            let wrapperDiv = document.createElement("div");
+            let name = document.createElement("h1");
+            let type = document.createElement("p");
+            let address = document.createElement("p");
+            let facility = document.createElement("p");
+            let open = document.createElement("p");
+            let closed = document.createElement("P");
+            let date = document.createElement("p");
+            wrapperDiv.classList.add("detailList");
+            name.textContent = item.FCLTY_NM;
+            type.textContent = `종류 : ${item.FCLTY_INFO_DC}`;
+            address.textContent = `주소 : ${item.LNM_ADDR}`;
+            facility.textContent = `시설정보설명 : ${item.FCLTY_INFO_DC}`;
+            open.textContent = `영업시간 : ${item.OPER_TIME}`;
+            closed.textContent = `휴무일 : ${item.RSTDE_GUID_CN}`;
+            date.textContent = item.pet_info_cn;
+            wrapperDiv.appendChild(name);
+            wrapperDiv.appendChild(type);
+            wrapperDiv.appendChild(address);
+            wrapperDiv.appendChild(facility);
+            wrapperDiv.appendChild(open);
+            wrapperDiv.appendChild(closed);
+            content.appendChild(wrapperDiv);
+          });
+        }
       })
       .catch((error) => {
         console.error("데이터를 불러오는 도중 에러가 발생했습니다:", error);
