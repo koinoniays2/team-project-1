@@ -146,6 +146,21 @@ document.addEventListener("DOMContentLoaded", function () {
           item.pet_info_cn?.includes("반려동물 동반 가능") && petOk.push(item);
         });
         console.log("호텔", petOk);
+        // 호텔 디테일
+        const content = document.querySelector(".content");
+        if(clickedDataId === "호텔") {
+          petOk?.forEach((item) => {
+            let name = document.createElement("p");
+            let address = document.createElement("p");
+            let date = document.createElement("p");
+            name.textContent = item.ldgs_nm;
+            address.textContent = `주소 : ${item.ldgs_addr}`;
+            date.textContent = item.pet_info_cn;
+            content.appendChild(name);
+            content.appendChild(address);
+            content.appendChild(date);
+          });
+        }
       })
       .catch((error) => {
         console.error("데이터를 불러오는 도중 에러가 발생했습니다:", error);
