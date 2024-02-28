@@ -84,18 +84,20 @@ header {
 .sub-title-box {
   display: flex;
   justify-content: flex-start;
-  font-size: 1.5em;
+  /* font-size: 1.5em; */
   margin-bottom: 1.5em;
 }
 .sub-title-t {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-weight: bold;
 }
 
 .sub-title-t p {
   margin: 0 1em;
+}
+.sub-title-box i {
+  transform: rotate(-30deg)
 }
 
 #food {color: #DA6A00;}
