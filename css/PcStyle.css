@@ -150,19 +150,12 @@ header {
   justify-content: start;
 }
 
-.second_section h2 {
+.sub-title-box1 {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row-reverse;
+  font-size: 1.5em;
+  margin-bottom: 1.5em;
 }
-
-.second_section .second_container div img {
-  width: 97.2%;
-  border-radius: 1%;
-  box-shadow: 5px 5px 5px 5px gray;
-  margin-top: 10px;
-}
-
-
 
 /* ----------section 3 */
 .third_section {
@@ -176,8 +169,6 @@ header {
   max-width: 1280px;
   display: flex;
   justify-content: end;
-
-
 }
 
 .third_section div img {
@@ -214,6 +205,7 @@ footer p {
   .first_section {
     margin-top: 100px;
   }
+}
   
 @media screen and (max-width: 768px) {
   .first_section_food {
@@ -242,5 +234,36 @@ footer p {
   .second_section {
     margin-top: 100px;
   }
-}
+
+  .sub-conbox {
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    justify-content: start;
+  }
+
+  .sub-conbox1 {
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    justify-content: start; 
+  }
+
+  .sub-title-box1 {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+  }
+
+  .third_section {
+    margin-top: 150px;
+  }
+  
+  .third_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
 }
