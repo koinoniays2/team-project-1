@@ -17,7 +17,7 @@ header {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   justify-content: space-between;
   align-items: center;
 }
@@ -137,14 +137,14 @@ header {
 .second_section {
   margin-top: 150px;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .sub-conbox {
   width: 100%;
   max-width: 1280px;
-  margin: 0 auto;
   display: flex;
-  justify-content: flex-start;
 }
 
 .second_section h2 {
@@ -195,6 +195,13 @@ footer p {
   font-size: 5rem;
 }
 
+
+/* 헤더 */
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+  .header-container {
+    padding: 0.5rem 1rem;
+  }
+}
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 
