@@ -137,6 +137,7 @@ i {
   display: block;
   width: 100%;
   object-fit: cover;
+  border-radius: 1%;
 }
 
 .swiper-pagination {
@@ -201,6 +202,10 @@ i {
 .third_section div img {
   border-radius: 1%;
   width: 100%;
+}
+.sub-conbox img {
+  width: 100%;
+  border-radius: 1%;
 }
 
 /* 푸터 */
@@ -281,10 +286,6 @@ footer li {
     max-width: 1280px;
     display: flex;
     justify-content: start;
-  }
-
-  .sub-conbox img {
-    width: 100%;
   }
 
   .sub-title-box1 {
