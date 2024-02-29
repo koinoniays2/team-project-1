@@ -7,7 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const foodData = async () => {
     try {
       const response = await fetch(
-        `http://api.kcisa.kr/openapi/API_TOU_052/request?serviceKey=${serviceKey}`,
+        `https://api.kcisa.kr/openapi/API_TOU_052/request?serviceKey=${serviceKey}`,
+
         {
           headers: {
             accept: "application/json",
