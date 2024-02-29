@@ -1,4 +1,4 @@
-// const serviceKey = "b26f3923-0250-4ed3-8329-54b04f6af8a2";
+const serviceKey = "b26f3923-0250-4ed3-8329-54b04f6af8a2";
 document.addEventListener("DOMContentLoaded", function () {
   const params = new URLSearchParams(window.location.search);
   const clickedDataId = params.get("dataId");
@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const foodData = async () => {
     try {
       const response = await fetch(
-        `https://api.kcisa.kr/openapi/API_TOU_052/request?serviceKey=b26f3923-0250-4ed3-8329-54b04f6af8a2`,
+        `https://api.kcisa.kr/openapi/API_TOU_052/request?serviceKey=${serviceKey}`,
 
         {
           headers: {
