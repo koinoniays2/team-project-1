@@ -203,26 +203,42 @@ i {
 }
 
 /* 푸터 */
-footer {
-  margin-top: 400px;
-}
-
-footer hr {
-  border: 2px solid black;
-}
-
-footer p {
-  text-align: center;
-  font-size: 1rem;
-}
 .sub-conbox1 {
   width: 640px;
   height: 360px;
 }
-
-footer li {
-  list-style-type: initial;
+footer {
+  margin: 150px auto 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.footer-conbox {  
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  margin: 100px auto 50px auto;
+}
+.footer-img {
+  width: 30%;
+  text-align: center;
+  margin: auto;
+}
+.footer-text {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px auto 10px;
+}
+
+.footer-text li {
+  list-style-type: disc;
+  margin-bottom: 10px;
+}
+
+
 
 /* 헤더 */
 @media screen and (min-width: 769px) and (max-width: 1279px) {
