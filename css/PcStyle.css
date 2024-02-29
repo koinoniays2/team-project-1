@@ -88,6 +88,7 @@ header {
   align-items: center;
   font-size: 1.5em;
   margin-bottom: 1.5em;
+  font-weight: bold;
 }
 .sub-title-t {
   display: flex;
@@ -136,6 +137,7 @@ i {
   display: block;
   width: 100%;
   object-fit: cover;
+  border-radius: 1%;
 }
 
 .swiper-pagination {
@@ -201,6 +203,10 @@ i {
   border-radius: 1%;
   width: 100%;
 }
+.sub-conbox img {
+  width: 100%;
+  border-radius: 1%;
+}
 
 /* 푸터 */
 .sub-conbox1 {
@@ -257,7 +263,7 @@ footer {
   .first_section_food {
     width: 200px;
     height: 150px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .first_section #first_container {
@@ -298,16 +304,12 @@ footer {
     justify-content: start;
   }
 
-  .sub-conbox img {
-    width: 100%;
-  }
-
   .sub-title-box1 {
     display: flex;
     justify-content: end;
     flex-direction: row;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-bottom: 1.5em;
   }
 
