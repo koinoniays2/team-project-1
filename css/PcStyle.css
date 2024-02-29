@@ -99,7 +99,7 @@ header {
 .sub-title-t p {
   margin: 0 1em;
 }
-.sub-title-box i {
+i {
   transform: rotate(-30deg);
 }
 
@@ -202,6 +202,7 @@ header {
   border-radius: 1%;
   width: 100%;
 }
+
 /* 푸터 */
 footer {
   margin-top: 400px;
@@ -213,11 +214,15 @@ footer hr {
 
 footer p {
   text-align: center;
-  font-size: 5rem;
+  font-size: 1rem;
 }
 .sub-conbox1 {
   width: 640px;
   height: 360px;
+}
+
+footer li {
+  list-style-type: initial;
 }
 
 /* 헤더 */
